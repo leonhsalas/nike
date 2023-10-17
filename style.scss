@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 0;
+    background: linear-gradient(to bottom, #d509a0, #ff606e);
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 40px 100px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            img{
+                max-width: 100px;
+            }
+        }
+        .toggle{
+            width: 30px;
+            height: 30px;
+            background: url();
+            background-size: 30px;
+        }
+    }
+}
