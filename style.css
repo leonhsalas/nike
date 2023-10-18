@@ -28,6 +28,73 @@ section header .logo img {
 section header .toggle {
   width: 30px;
   height: 30px;
-  background: url();
+  background: url(menu.png);
   background-size: 30px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section .content {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+section .content .imgBx {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section .content .imgBx img {
+  max-width: 100%;
+  animation: animacionZapatilla 3.3 linear infinite;
+}
+section .content .text {
+  max-width: 700px;
+  margin-top: 20px;
+}
+section .content .text h2 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+section .content .text p {
+  color: white;
+}
+section .content .text a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: black;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+section::before {
+  content: "ZOOMX";
+  font-size: 20vw;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.0666666667);
+  display: flex;
+  font-weight: 900;
+  padding-top: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci {
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px 40px;
+  }
+  section {
+    padding: 40px 40px 0;
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=style.css.map */
