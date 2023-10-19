@@ -38,12 +38,13 @@ section .content {
   position: relative;
   width: 100%;
   margin-top: 40px;
+  padding-bottom: 40px;
 }
 section .content .imgBx {
   position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 section .content .imgBx img {
   max-width: 100%;
@@ -87,6 +88,23 @@ section::before {
 
 .sci {
   position: absolute;
+  bottom: 50px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  display: block;
+  color: white;
+}
+.sci li a:hover {
+  transform: scale(1.4);
+  transition: 0.6s;
 }
 
 @media (max-width: 600px) {
@@ -97,4 +115,50 @@ section::before {
     padding: 40px 40px 0;
     overflow: hidden;
   }
+  section::before {
+    font-size: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .content {
+    max-width: 100%;
+    margin-top: 120px;
+  }
+  .content .imgBx {
+    margin-top: 65px;
+  }
+  .sci {
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: row;
+    bottom: 10px;
+    right: inherit;
+    margin-top: 40px;
+  }
+  .sci li {
+    margin-right: 15px;
+  }
+}
+@keyframes animacionZapatilla {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+.imgBx {
+  position: relative;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.imgBx img {
+  max-width: 100%;
+  animation: animacionZapatilla 3.3 linear infinite !important;
 }/*# sourceMappingURL=style.css.map */
+
+#img.fall-jump{
+  max-width: 100%;
+  animation: animacionZapatilla 3.3 linear infinite !important;
+}
